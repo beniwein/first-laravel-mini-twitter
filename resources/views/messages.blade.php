@@ -1,6 +1,6 @@
 <!--extend layout master.blade.php -->
  
-    @extends('master')
+    @extends('layouts.master')
 
 <!--sets value for section title to "Mini Twitter" (section title is used in messages.blade.php) -->
     @section('title', 'Mini Twitter')
@@ -45,8 +45,8 @@ ts value for section title to "Mini Twitter" (section content is used in message
            <a href="/message/{{$message->id}}">{{$message->title}}:</a>
        </b><br>
        {{$message->content}}<br>
-       {{$message->created_at->diffForHumans()}}           
-   </li>
+       {{$message->created_at->diffForHumans()}} 
+    </li>
 @endforeach
 </ul>  
 @endsection
