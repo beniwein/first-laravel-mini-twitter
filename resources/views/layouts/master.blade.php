@@ -8,6 +8,22 @@
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    <title>@yield('title')</title>
+   <style>
+
+   body {  
+      background:linear-gradient(90deg, #e1ae41 0%, #ffffff 80%);
+   }
+
+   .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: blue;
+      color: white;
+      text-align: center;
+   }
+</style>
 </head>
 <body>
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
@@ -18,6 +34,6 @@
    @yield('content')
    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
     und im html ausgegeben-->
-   <div><b>Dummy Footer: {{date('d.m.Y')}}</b></div>   
+   <div class="footer"><b>Updated: {{date('d.m.Y')}}</b></div>   
 </body>
 </html>

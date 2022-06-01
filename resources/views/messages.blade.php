@@ -17,7 +17,7 @@ ts value for section title to "Mini Twitter" (section content is used in message
     <!-- this blade directive is necessary for all form posts somewhere in between
         the form tags -->
     @csrf
-    <button type="submit">Submit</button>
+    <button type="submit">Submit</button><hr>
  </form>
  
     <h2>Recent messages:</h2>
