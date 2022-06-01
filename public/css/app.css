@@ -11289,8 +11289,7 @@ textarea.form-control-lg {
 body {
   background: #e1ae41;
 }
-
-h2, .h2 {
+body h2, body .h2 {
   margin-left: 10px;
 }
 
