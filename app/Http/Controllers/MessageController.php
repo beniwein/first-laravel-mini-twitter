@@ -66,7 +66,11 @@ class MessageController extends Controller {
         $result = Message::findOrFail($id)->delete();
   
         // after that we redirect to the message list again  
-        return redirect('/messages');        
+        return redirect('/messages');     
     } 
+    public function edit($id) {
+        $result = Message::find($id);
+        return view('messageDetails', ['message' => $message]);
+    }
 }
     

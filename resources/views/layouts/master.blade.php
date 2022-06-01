@@ -5,25 +5,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="/css/app.css" rel="stylesheet">
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
-   <title>@yield('title')</title>
-   <style>
-
-   body {  
-      background:linear-gradient(90deg, #e1ae41 0%, #ffffff 80%);
-   }
-
-   .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: blue;
-      color: white;
-      text-align: center;
-   }
-</style>
+   <title class="title">@yield('title')</title>
 </head>
 <body>
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
