@@ -8,6 +8,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    <!-- hier wird der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
+   <img src="{{ asset('images/logo.png') }}" alt="Pacman">
    <title class="title">@yield('title')</title>
 </head>
 <body>
